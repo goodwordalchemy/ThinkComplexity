@@ -87,6 +87,7 @@ class LifeViewer(object):
         Generates an animation with the given number of steps.
         """
         self.steps = steps
+
         self.fig.canvas.manager.window.after(1000, self.animate_callback)
         pyplot.show()
 

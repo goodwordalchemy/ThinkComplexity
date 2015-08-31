@@ -183,7 +183,13 @@ class RandomLayout(Layout):
             self.spread_vertex(v, others)
             others.append(v)
 
-
+# I added this function
+def ShowGraph(g, layout='Circle'):
+    if layout=="Circle":
+        l = CircleLayout(g)
+    gw = GraphWorld()
+    gw.show_graph(g, l)
+    gw.mainloop()
 
 def main(script, n='10', *args):
 
