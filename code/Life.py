@@ -88,7 +88,7 @@ class LifeViewer(object):
         """
         self.steps = steps
 
-        self.fig.canvas.manager.window.after(1000, self.animate_callback)
+        self.fig.canvas.manager.window.after(10000, self.animate_callback)
         pyplot.show()
 
     def animate_callback(self):
